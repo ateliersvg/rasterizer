@@ -1,0 +1,79 @@
+{
+    "name": "atelier/rasterizer",
+    "description": "Rasterize SVG documents to bitmaps through external rendering adapters (resvg, rsvg-convert)",
+    "license": "MIT",
+    "type": "library",
+    "homepage": "https://github.com/ateliersvg/rasterizer",
+    "keywords": [
+        "svg",
+        "rasterizer",
+        "rasterize",
+        "png",
+        "bitmap",
+        "resvg",
+        "rsvg",
+        "render",
+        "export"
+    ],
+    "support": {
+        "issues": "https://github.com/ateliersvg/rasterizer/issues",
+        "source": "https://github.com/ateliersvg/rasterizer"
+    },
+    "authors": [
+        {
+            "name": "Simon André",
+            "email": "smn.andre@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.3",
+        "psr/log": "^3.0",
+        "symfony/process": "^7.3|^8.0"
+    },
+    "require-dev": {
+        "atelier/svg": "^1.0",
+        "friendsofphp/php-cs-fixer": "^3.94",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^12.5",
+        "rector/rector": "^2.3"
+    },
+    "suggest": {
+        "atelier/svg": "Build SVG documents in PHP; any Stringable SVG is accepted as input.",
+        "librsvg2-bin": "Provides the rsvg-convert binary used by RsvgConvertRasterizer.",
+        "resvg/resvg": "Provides the resvg binary used by ResvgRasterizer."
+    },
+    "autoload": {
+        "psr-4": {
+            "Atelier\\Rasterizer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Atelier\\Rasterizer\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.7.x-dev"
+        }
+    },
+    "scripts": {
+        "coverage": "vendor/bin/phpunit --coverage-text",
+        "cs": "vendor/bin/php-cs-fixer fix --dry-run --diff",
+        "cs:fix": "vendor/bin/php-cs-fixer fix",
+        "qa": [
+            "@cs",
+            "@sa",
+            "@test"
+        ],
+        "rector": "vendor/bin/rector process --dry-run",
+        "sa": "vendor/bin/phpstan analyse --memory-limit=-1",
+        "test": "vendor/bin/phpunit",
+        "test:system": "vendor/bin/phpunit --group system",
+        "test:unit": "vendor/bin/phpunit --exclude-group system"
+    }
+}
