@@ -5,5 +5,3 @@
 /composer.lock
 /phpstan.neon
 /phpunit.xml
-/.DS_Store
-**/.DS_Store
