@@ -5,7 +5,7 @@
 <p align="center">
   <img alt="PHP Version" src="https://img.shields.io/badge/PHP-8.3%2B-a86cf0?labelColor=14141c">
   <img alt="Tests" src="https://img.shields.io/github/actions/workflow/status/ateliersvg/rasterizer/CI.yml?branch=main&label=Tests&labelColor=14141c&color=a86cf0">
-  <img alt="PHPUnit" src="https://img.shields.io/badge/PHPUnit-13-a86cf0?labelColor=14141c">
+  <img alt="PHPUnit" src="https://img.shields.io/badge/PHPUnit-12-a86cf0?labelColor=14141c">
   <img alt="PHPStan" src="https://img.shields.io/badge/PHPStan-max-a86cf0?labelColor=14141c">
   <img alt="Stable" src="https://img.shields.io/github/v/release/ateliersvg/rasterizer?label=Stable&labelColor=14141c&color=a86cf0">
   <img alt="License" src="https://img.shields.io/github/license/ateliersvg/rasterizer?label=License&labelColor=14141c&color=a86cf0">
