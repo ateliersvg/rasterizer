@@ -3,7 +3,7 @@
     "description": "Rasterize SVG documents to bitmaps through external rendering adapters (resvg, rsvg-convert)",
     "license": "MIT",
     "type": "library",
-    "homepage": "https://github.com/ateliersvg/rasterizer",
+    "homepage": "https://ateliersvg.com/rasterizer/",
     "keywords": [
         "svg",
         "rasterizer",
@@ -22,7 +22,8 @@
     "authors": [
         {
             "name": "Simon André",
-            "email": "smn.andre@gmail.com"
+            "email": "smn.andre@gmail.com",
+            "homepage": "https://smnandre.dev"
         }
     ],
     "minimum-stability": "stable",
@@ -62,7 +63,6 @@
         }
     },
     "scripts": {
-        "coverage": "vendor/bin/phpunit --coverage-text",
         "cs": "vendor/bin/php-cs-fixer fix --dry-run --diff",
         "cs:fix": "vendor/bin/php-cs-fixer fix",
         "qa": [
@@ -70,10 +70,7 @@
             "@sa",
             "@test"
         ],
-        "rector": "vendor/bin/rector process --dry-run",
         "sa": "vendor/bin/phpstan analyse --memory-limit=-1",
-        "test": "vendor/bin/phpunit",
-        "test:system": "vendor/bin/phpunit --group system",
-        "test:unit": "vendor/bin/phpunit --exclude-group system"
+        "test": "vendor/bin/phpunit"
     }
 }
