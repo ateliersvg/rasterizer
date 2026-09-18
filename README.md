@@ -1,13 +1,16 @@
-<h1 align="center">Atelier Rasterizer</h1>
+<h1 align="center">
+  <img src=".github/atelier-rasterizer.svg"
+       alt="Atelier Rasterizer">
+</h1>
 
 <p align="center">Rasterize SVG to PNG, JPEG or WebP from PHP, through a rendering binary you choose.</p>
 
 <p align="center">
   <img alt="PHP Version" src="https://img.shields.io/badge/PHP-8.3%2B-a86cf0?labelColor=14141c">
+  <img alt="Version" src="https://img.shields.io/packagist/v/atelier/rasterizer?label=Version&labelColor=14141c&color=a86cf0">
   <img alt="Tests" src="https://img.shields.io/github/actions/workflow/status/ateliersvg/rasterizer/CI.yml?branch=main&label=Tests&labelColor=14141c&color=a86cf0">
   <img alt="PHPUnit" src="https://img.shields.io/badge/PHPUnit-12-a86cf0?labelColor=14141c">
   <img alt="PHPStan" src="https://img.shields.io/badge/PHPStan-max-a86cf0?labelColor=14141c">
-  <img alt="Stable" src="https://img.shields.io/github/v/release/ateliersvg/rasterizer?label=Stable&labelColor=14141c&color=a86cf0">
   <img alt="License" src="https://img.shields.io/github/license/ateliersvg/rasterizer?label=License&labelColor=14141c&color=a86cf0">
 </p>
 
